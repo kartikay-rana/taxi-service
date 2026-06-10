@@ -8,7 +8,82 @@
     <meta name="description" content="Amit Taxi Service near Kumarhatti, Solan (HP). 24x7 taxi service with All India Tourist Permit. Sedan, Ertiga, Innova, Crysta & Tempo Traveller. Call 8580621598." />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .initial-loader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #09090b;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          font-family: system-ui, -apple-system, sans-serif;
+        }
+        .loader-ring {
+          position: relative;
+          width: 70px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .loader-ring::before,
+        .loader-ring::after {
+          content: '';
+          position: absolute;
+          border-radius: 50%;
+          border: 3px solid transparent;
+        }
+        .loader-ring::before {
+          width: 100%;
+          height: 100%;
+          border-top-color: #fbbf24;
+          border-bottom-color: #f59e0b;
+          animation: spin-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+        .loader-ring::after {
+          width: 80%;
+          height: 80%;
+          border-left-color: #b45309;
+          border-right-color: #fde68a;
+          animation: spin-loader-reverse 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+        .loader-text {
+          margin-top: 20px;
+          font-size: 15px;
+          font-weight: 800;
+          letter-spacing: 0.12em;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+        .loader-subtext {
+          margin-top: 6px;
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: 0.3em;
+          color: #71717a;
+          text-transform: uppercase;
+        }
+        @keyframes spin-loader {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        @keyframes spin-loader-reverse {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(-360deg); }
+        }
+      </style>
+      <div class="initial-loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Amit Taxi Service</div>
+        <div class="loader-subtext">Kumarhatti · Solan</div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -24,7 +24,7 @@ export const cars = [
     seats: "4 Passengers",
     luggage: "2 Bags",
     desc: "Smooth, fuel-efficient rides for city trips, airport transfers & couples. Air-conditioned comfort all the way.",
-    img: "https://images.pexels.com/photos/9544521/pexels-photo-9544521.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    img: "https://images.pexels.com/photos/9544521/pexels-photo-9544521.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600",
     best: "City & Airport",
   },
   {
@@ -33,7 +33,7 @@ export const cars = [
     seats: "6 Passengers",
     luggage: "3 Bags",
     desc: "Spacious 7-seater MPV ideal for small families and group outings with extra legroom and storage.",
-    img: "https://images.pexels.com/photos/37029578/pexels-photo-37029578.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    img: "https://images.pexels.com/photos/37029578/pexels-photo-37029578.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600",
     best: "Family Trips",
   },
   {
@@ -42,7 +42,7 @@ export const cars = [
     seats: "7 Passengers",
     luggage: "4 Bags",
     desc: "Reliable and roomy SUV perfect for long highway journeys and outstation tours in total comfort.",
-    img: "https://images.pexels.com/photos/17612417/pexels-photo-17612417.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    img: "https://images.pexels.com/photos/17612417/pexels-photo-17612417.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600",
     best: "Outstation Tours",
   },
   {
@@ -51,7 +51,7 @@ export const cars = [
     seats: "7 Passengers",
     luggage: "4 Bags",
     desc: "Top-tier luxury SUV with plush interiors, captain seats and a powerful, silent engine for premium travel.",
-    img: "https://images.pexels.com/photos/26572217/pexels-photo-26572217.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    img: "https://images.pexels.com/photos/26572217/pexels-photo-26572217.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600",
     best: "Premium Travel",
   },
   {
@@ -60,7 +60,7 @@ export const cars = [
     seats: "12–16 Passengers",
     luggage: "Large",
     desc: "The ultimate choice for large groups, weddings & pilgrimages. Push-back seats and ample luggage space.",
-    img: "https://images.pexels.com/photos/33384858/pexels-photo-33384858.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    img: "https://images.pexels.com/photos/33384858/pexels-photo-33384858.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600",
     best: "Group Travel",
   },
 ];

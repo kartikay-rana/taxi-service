@@ -141,11 +141,12 @@ function Hero() {
         src="/images/hero.jpg"
         alt="Premium taxi on a mountain highway"
         className="animate-kenburns absolute inset-0 h-full w-full object-cover"
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-zinc-950/30" />
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/60" />
 
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-5 pt-32 pb-20 lg:px-8">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-5 pt-32 pb-32 lg:px-8 lg:pb-36">
         <div className="max-w-2xl">
           <div className="fade-up-1 flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-300 backdrop-blur-md">
@@ -190,7 +191,7 @@ function Hero() {
           </div>
 
           {/* Glass stat bar */}
-          <div className="fade-up-5 mt-12 grid max-w-lg grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
+          <div className="fade-up-5 mt-12 grid max-w-lg grid-cols-3 gap-2 sm:gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 sm:p-4 backdrop-blur-xl">
             {[
               ["5+", "Vehicle Types"],
               ["24/7", "Availability"],
@@ -219,7 +220,7 @@ function Hero() {
 
 function FeatureStrip() {
   return (
-    <section id="why" className="relative z-10 -mt-24">
+    <section id="why" className="relative z-10 -mt-16 sm:-mt-20 lg:-mt-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/40 backdrop-blur-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-6">
           {features.map((f, i) => (
@@ -280,6 +281,7 @@ function Fleet() {
                   src={car.img}
                   alt={car.name}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
                 <span className="absolute left-4 top-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs font-bold text-amber-300 backdrop-blur-md">
@@ -411,7 +413,7 @@ function CTA() {
     <section className="px-5 py-10 lg:px-8">
       <Reveal from="zoom">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10">
-        <img src="/images/cta.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="/images/cta.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-zinc-950/80 backdrop-blur-[2px]" />
         <div className="relative px-6 py-20 text-center lg:px-8">
           <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
@@ -569,7 +571,7 @@ function FloatingCall() {
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-zinc-950 font-sans text-white">
+    <div className="relative min-h-screen bg-zinc-950 font-sans text-white overflow-x-hidden">
       <Orbs />
       <Navbar />
       <main>
