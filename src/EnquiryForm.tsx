@@ -69,20 +69,21 @@ export default function EnquiryForm() {
 
   return (
     <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-      <input required name="name" placeholder="Your Name" className={inputCls} />
+      <input required name="name" aria-label="Full Name" placeholder="Your Name" className={inputCls} />
       <input
         required
         name="phone"
         type="tel"
         pattern="[0-9+ -]{10,15}"
+        aria-label="Phone Number"
         placeholder="Phone Number"
         className={inputCls}
       />
       <div className="grid grid-cols-2 gap-4">
-        <input name="from" placeholder="From" className={inputCls} />
-        <input name="to" placeholder="To" className={inputCls} />
+        <input name="from" aria-label="Pickup Location (From)" placeholder="From" className={inputCls} />
+        <input name="to" aria-label="Drop Location (To)" placeholder="To" className={inputCls} />
       </div>
-      <select name="vehicle" defaultValue="Any" className={inputCls}>
+      <select name="vehicle" aria-label="Select Vehicle Class" defaultValue="Any" className={inputCls}>
         <option className="bg-zinc-900" value="Any">
           Select Vehicle
         </option>
@@ -95,6 +96,7 @@ export default function EnquiryForm() {
       <textarea
         name="message"
         rows={3}
+        aria-label="Travel Date and Special Requirements"
         placeholder="Travel date / any details (optional)"
         className={`${inputCls} resize-none`}
       />

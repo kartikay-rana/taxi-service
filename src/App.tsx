@@ -279,7 +279,7 @@ function Fleet() {
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={car.img}
-                  alt={car.name}
+                  alt={`${car.name} Cab - Amit Taxi Service Kumarhatti Solan`}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
@@ -413,7 +413,7 @@ function CTA() {
     <section className="px-5 py-10 lg:px-8">
       <Reveal from="zoom">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10">
-        <img src="/images/cta.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <img src="/images/cta.jpg" alt="Amit Taxi Service Outstation Cab Booking Solan" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-zinc-950/80 backdrop-blur-[2px]" />
         <div className="relative px-6 py-20 text-center lg:px-8">
           <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
